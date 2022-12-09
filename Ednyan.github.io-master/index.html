@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="css/Website_css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRATEx</title>
+    <script src="css/jquery-3.2.1.js"></script>
+</head>
+
+<body>
+    <div id=everything>
+    <nav ><img id=transparentimage src="imgs/transparent_image.png" width=100% height=100%/>
+            <div id="menu">
+                <a class = "inicio" href="index.html"><img src="imgs/Smallimage.png" title="CRATEx"/></a>
+                <a onclick="myFunction()">Log In</a>
+                <a class="quemsomos" href="QuemSomos.html">Quem Somos</a>
+                <a class="orcamentos" href="Orcamentos.html">Orçamentos</a>
+                <a class="clientes" href="index.html#text">Clientes</a>
+                <a class="servicos" href="index.html#dropdowns">Serviços</a>
+            </div>
+        <nav class=redline>
+        </nav>
+    </nav>
+        <div id=image><img src="imgs/Think_Create_Innovate.png" width=100% height=100%/></div>
+        <div class="slider">
+            <figure>
+            <div class="slide">
+                <img src="slider/img.1.jpg"/>
+            </div>
+            <div class="slide">
+                <img src="slider/img.2.jpg"/>
+            </div>
+            <div class="slide">
+                <img src="slider/img.3.jpg"/>
+            </div>
+            <div class="slide">
+                <img src="slider/img.4.png"/>
+            </div>
+            <div class="slide">
+                <img src="slider/img.5.jpg"/>
+            </div>
+             <div class="slide">
+                <img src="slider/img.6.jpg"/>
+            </div>
+             <div class="slide">
+                <img src="slider/img.7.jpg"/>
+            </div>
+             <div class="slide">
+                <img src="slider/img.8.jpg"/>
+            </div>
+            </figure>
+        </div>
+        <br>
+        <div>
+        <h1 id=insptext>ABRAÇA NOVAS <span id=novas>IDEIAS</span>!</h1>
+        <h2 id=text> Os nossos Eventos e Clientes:</h2>
+        </div>
+        <div class="events">
+            <div class="event" onmouseover="mouseover()" onmouseout="mouseout()" onclick="servicos1()">
+                <div class=eventtitle>Tecnologia</div>
+                <div class=eventimage id=img1><img src="imgs/img.11.jpg" onclick="servicos1()"/></div>
+                <div></div>
+            </div>
+            <div class="event" onmouseover="mouseover2()" onmouseout="mouseout2()" onclick="servicos2()">
+                <div class=eventtitle>Entretenimento</div>
+                <div class=eventimage id=img2><img src="imgs/img.10.jpg"/></div>
+                <div></div>
+            </div>
+            <div class="event" onmouseover="mouseover3()" onmouseout="mouseout3()" onclick="servicos3()">
+                <div class=eventtitle>Empresarial</div>
+                <div class=eventimage id=img3><img src="imgs/img.9.jpg"/></div>
+            </div>
+        
+        </div>
+        <div id=dropdowns>
+            <div id=dropdown>
+                Clientes: <br>
+                Os nossos eventos de tecnologia são direcionados para ciêntistas, investigadores e para os mais curiosos que procuram conhecimento, ideias novas e motivação.
+            </div>
+            <div id=dropdown2 >
+                Clientes: <br>
+                Os nossos eventos de entretenimento são sobretudo direcionados para as camadas jovens, mas dependendo do foco do evento, este poderá ser para toda a gente.   
+            </div>
+            <div id=dropdown3>
+                Clientes: <br>
+                Os nossos eventos empresariais são direcionados para empreendedores, CEO's, quer de pequenas/médias empresas, quer de empresas de renome.
+            </div>
+            <div id=dropdown4>
+                    <img onclick="servicos1()" id="cross_drop" src="imgs/cross.png" height=10/>
+                    <div id=tectext>
+                        <br>Serviços:<br>
+                        Nos eventos tecnológicos a CRATEx disponibiliza para os seus clientes a possibilidade de escolherem o local do evento, a comida/bebida do evento, a alteração do horário de funcionamento do evento caso este não esteja de acordo com as necessidades do cliente.Além disso, tentaremos contactar através das nossas redes sociais o público mais relacionado com a ciência/tecnologia.<br>
+                        A CRATEx garante:
+                        <li>Organização;</li>
+                        <li>Higiene;</li>
+                        <li>Segurança;</li>
+                        <li>Respeito (quer pelo cliente, como pelas pessoas envolvidas no evento).</li>
+                    </div>
+                    <div id=anteriores>
+                        Imagens de eventos tecnológicos anteriores:
+                        <div id=imagens1>
+                            <div class=imagemdropdown>
+                                <img id=get1 src="anteriores/img1.png" onclick="fullscreen1()"/>
+                            </div>
+                            <div class=imagemdropdown>
+                                <img id=get2 src="anteriores/img2.png" onclick="fullscreen2()"/>
+                            </div>
+                            <div class=imagemdropdown>
+                                <img id=get3 src="anteriores/img3.png" onclick="fullscreen3()"/>
+                            </div>
+                        </div>
+                    
+                    
+                    </div>
+                        
+            </div>
+            <div id=dropdown5>
+                    <img onclick="servicos2()" id="cross_drop" src="imgs/cross.png" height=10/>
+                    <div id=tectext>
+                        <br>Serviços:<br>
+                        Nos eventos de entretenimento a CRATEx disponibiliza para os seus clientes a possibilidade de escolherem o local do evento, a comida/bebida do evento, a alteração do horário de funcionamento do evento caso este não esteja de acordo com as necessidades do cliente.Além disso, tentaremos contactar através das nossas redes sociais as camadas mais jovens e procuramos/convidamos artistas e celebridades (DJ's, cantores, músicos, celebridades), a CRATEx, não consegue garantir que encontre artistas disponíveis.<br>
+                        A CRATEx garante:
+                        <li>Organização;</li>
+                        <li>Higiene;</li>
+                        <li>Segurança;</li>
+                        <li>Respeito (quer pelo cliente, como pelas pessoas envolvidas no evento).</li>
+                    </div>
+                    <div id=anteriores>
+                        Imagens de eventos de entretenimento anteriores:
+                        <div id=imagens1>
+                            <div class=imagemdropdown>
+                                <img id=get4 src="anteriores/img4.png" onclick="fullscreen4()"/>
+                            </div>
+                            <div class=imagemdropdown>
+                                <img id=get5 src="anteriores/img5.png" onclick="fullscreen5()"/>
+                            </div>
+                            <div class=imagemdropdown>
+                                <img id=get6 src="anteriores/img6.png" onclick="fullscreen6()"/>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div id=dropdown6>
+                    <img onclick="servicos3()" id="cross_drop" src="imgs/cross.png" height=10/>
+                    <div id=tectext>
+                        <br>Serviços:<br>
+                        Nos eventos empresariais a CRATEx disponibiliza para os seus clientes a possibilidade de escolherem o local do evento, a comida/bebida do evento, a alteração do horário de funcionamento do evento caso este não esteja de acordo com as necessidades do cliente. Este tipo de eventos pode-se tornar um pouco monótono, é por essa razão que a CRATEx oferece café grátis em máquinas presentes no evento.<br>
+                        A CRATEx garante:
+                        <li>Organização;</li>
+                        <li>Higiene;</li>
+                        <li>Segurança;</li>
+                        <li>Respeito (quer pelo cliente, como pelas pessoas envolvidas no evento);</li>
+                        <li>Café!</li>
+                    </div>
+                    <div id=anteriores>
+                        Imagens de eventos empresariais anteriores:
+                        <div id=imagens1>
+                            <div class=imagemdropdown>
+                                <img id=get7 src="anteriores/img7.png" onclick="fullscreen7()"/>
+                            </div>
+                            <div class=imagemdropdown>
+                                <img id=get8 src="anteriores/img8.png" onclick="fullscreen8()"/>
+                            </div>
+                            <div class=imagemdropdown>
+                                <img id=get9 src="anteriores/img9.png" onclick="fullscreen9()"/>
+                            </div>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+        </div>
+        <div class=fullimage_class id=fullimage1>
+            <img id="cross_full" src="imgs/cross.png" onclick="fullscreen1()" height=10/>
+            <img id=set src="anteriores/img1.png"/>
+        </div>
+        <div class=fullimage_class id=fullimage2>
+            <img id="cross_full" src="imgs/cross.png" onclick="fullscreen2()" height=10/>
+            <img id=set src="anteriores/img2.png"/>
+        </div>
+        <div class=fullimage_class id=fullimage3>
+            <img id="cross_full" src="imgs/cross.png" onclick="fullscreen3()" height=10/>
+            <img id=set src="anteriores/img3.png"/>
+        </div>
+        <div class=fullimage_class id=fullimage4>
+            <img id="cross_full" src="imgs/cross.png" onclick="fullscreen4()" height=10/>
+            <img id=set src="anteriores/img4.png"/>
+        </div>
+        <div class=fullimage_class id=fullimage5>
+            <img id="cross_full" src="imgs/cross.png" onclick="fullscreen5()" height=10/>
+            <img id=set src="anteriores/img5.png"/>
+        </div>
+        <div class=fullimage_class id=fullimage6>
+            <img id="cross_full" src="imgs/cross.png" onclick="fullscreen6()" height=10/>
+            <img id=set src="anteriores/img6.png"/>
+        </div>
+        <div class=fullimage_class id=fullimage7>
+            <img id="cross_full" src="imgs/cross.png" onclick="fullscreen7()" height=10/>
+            <img id=set src="anteriores/img7.png"/>
+        </div>
+        <div class=fullimage_class id=fullimage8>
+            <img id="cross_full" src="imgs/cross.png" onclick="fullscreen8()" height=10/>
+            <img id=set src="anteriores/img8.png"/>
+        </div>
+        <div class=fullimage_class id=fullimage9>
+            <img id="cross_full" src="imgs/cross.png" onclick="fullscreen9()" height=10/>
+            <img id=set src="anteriores/img9.png"/>
+        </div>
+    <div id="login" display="none" hidden>
+            <nav class = titulo>Log in do CRATEx <img onclick="myFunction()" id="cross" src="imgs/cross.png" height=10/></nav>
+            <br><br>
+        <form>
+            <div>
+                <div class="formtext">
+                    <label for="email">Email:</label>
+                </div>
+                <div>
+                    <input type="email" id="email" placeholder=" ex: nome@example.com" required>
+                </div>
+                
+                <br>
+                    
+                <div class="formtext">
+                    <label for="password">Password:</label>
+                </div>
+                <div>
+                    <input type="password" id="password" placeholder=" password" required>
+                </div>
+                
+                <br>
+                
+                <div>
+                    <input type="submit" id="loginbutton" value="Log In">
+                </div>
+            </div> 
+        </form>
+            <p>Não tem uma conta? Crie uma <b><a id= "aqui" target="_blank" href="signup.html">aqui</a></b></p>
+    </div>     
+            
+    <script>
+        function myFunction() {
+            var login = document.getElementById("login");
+            if (login.style.display === "block"){
+                login.style.display = "none";
+                $("#everything").css("filter", "none");
+                $("#transparentimage").css("visibility", "hidden");
+            }
+            else{
+                login.style.display = "block"; 
+                $("#everything").css("filter", "blur(5px)");
+                $("#transparentimage").css("visibility", "visible");
+            }
+            
+        }
+        var dropdown = document.getElementById("dropdown");
+        var img1 = document.getElementById("img1");
+            function mouseout(){
+                $("#dropdown").css("visibility","hidden");
+                $("#img1").css("filter","blur(0px)");
+            }
+            function mouseover(){
+                $("#dropdown").css("visibility","visible");
+                $("#img1").css("filter","blur(5px)");
+            }
+        var dropdown2 = document.getElementById("dropdown2");
+        var img2 = document.getElementById("img2");
+            function mouseout2(){
+                $("#dropdown2").css("visibility","hidden");
+                $("#img2").css("filter","blur(0px)");
+            }
+            function mouseover2(){
+                $("#dropdown2").css("visibility","visible"); 
+                $("#img2").css("filter","blur(5px)");
+            }
+        var dropdown3 = document.getElementById("dropdown3");
+        var img3 = document.getElementById("img3");
+            function mouseout3(){
+                $("#dropdown3").css("visibility","hidden");
+                $("#img3").css("filter","blur(0px)");
+            }
+            function mouseover3(){
+                $("#dropdown3").css("visibility","visible");
+                $("#img3").css("filter","blur(5px)");
+            }
+        var dropdown4 = document.getElementById("dropdown4");
+        var dropdown5 = document.getElementById("dropdown5");
+        var dropdown6 = document.getElementById("dropdown6");
+        function servicos1() {
+            var dropdown4 = document.getElementById("dropdown4");
+            if (dropdown4.style.display === "block"){
+                dropdown4.style.display = "none";
+                $("#dropdown4").css("visibility", "hidden");
+            }
+            else{
+                window.scrollBy(0, 500);
+                dropdown4.style.display = "block";
+                $("#dropdown4").css("visibility", "visible");
+                dropdown5.style.display = "none"; 
+                $("#dropdown5").css("visibility", "hidden");
+                dropdown6.style.display = "none";
+                $("#dropdown6").css("visibility", "hidden");
+            }
+            
+        }
+        function servicos2() {
+            var dropdown5 = document.getElementById("dropdown5");
+            if (dropdown5.style.display === "block"){
+                dropdown5.style.display = "none";
+                $("#dropdown5").css("visibility", "hidden");
+            }
+            else{
+                window.scrollBy(0, 500);
+                dropdown4.style.display = "none";
+                $("#dropdown4").css("visibility", "hidden");
+                dropdown5.style.display = "block"; 
+                $("#dropdown5").css("visibility", "visible");
+                dropdown6.style.display = "none";
+                $("#dropdown6").css("visibility", "hidden");
+            }
+            
+        }
+        function servicos3() {
+            var dropdown6 = document.getElementById("dropdown6");
+            if (dropdown6.style.display === "block"){
+                dropdown6.style.display = "none";
+                $("#dropdown6").css("visibility", "hidden");
+            }
+            else{
+                window.scrollBy(0, 500);
+                dropdown4.style.display = "none";
+                $("#dropdown4").css("visibility", "hidden");
+                dropdown5.style.display = "none"; 
+                $("#dropdown5").css("visibility", "hidden");
+                dropdown6.style.display = "block";
+                $("#dropdown6").css("visibility", "visible");
+            }
+        
+        }
+        function fullscreen1(){
+            var full = document.getElementById("fullimage1");
+            if (full.style.display === "block"){
+                full.style.display = "none";
+            }
+            else{
+                full.style.display = "block"; 
+            }
+        }
+        function fullscreen2(){
+            var full = document.getElementById("fullimage2");
+            if (full.style.display === "block"){
+                full.style.display = "none";
+            }
+            else{
+                full.style.display = "block"; 
+            }
+        }
+        function fullscreen3(){
+            var full = document.getElementById("fullimage3");
+            if (full.style.display === "block"){
+                full.style.display = "none";
+            }
+            else{
+                full.style.display = "block"; 
+            }
+        }
+        function fullscreen4(){
+            var full = document.getElementById("fullimage4");
+            if (full.style.display === "block"){
+                full.style.display = "none";
+            }
+            else{
+                full.style.display = "block"; 
+            }
+        }
+        function fullscreen5(){
+            var full = document.getElementById("fullimage5");
+            if (full.style.display === "block"){
+                full.style.display = "none";
+            }
+            else{
+                full.style.display = "block"; 
+            }
+        }
+        function fullscreen6(){
+            var full = document.getElementById("fullimage6");
+            if (full.style.display === "block"){
+                full.style.display = "none";
+            }
+            else{
+                full.style.display = "block"; 
+            }
+        }
+        function fullscreen7(){
+            var full = document.getElementById("fullimage7");
+            if (full.style.display === "block"){
+                full.style.display = "none";
+            }
+            else{
+                full.style.display = "block"; 
+            }
+        }
+        function fullscreen8(){
+            var full = document.getElementById("fullimage8");
+            if (full.style.display === "block"){
+                full.style.display = "none";
+            }
+            else{
+                full.style.display = "block"; 
+            }
+        }
+        function fullscreen9(){
+            var full = document.getElementById("fullimage9");
+            if (full.style.display === "block"){
+                full.style.display = "none";
+            }
+            else{
+                full.style.display = "block"; 
+            }
+        }
+
+    </script>
+</body>
+    
+<footer id= "footer">
+    <!--<div>
+        Cratex, Copyright © 2018-2019- Trabalho de TWEB- Direitos de autor reservados.O uso deste site significa o respeito e aceitação dos termos e das condições de segurança.
+        
+    </div>-->
+</footer>
+    
+</html>

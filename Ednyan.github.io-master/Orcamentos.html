@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="css/orcamentos_css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRATEx</title>
+    <script src="css/jquery-3.2.1.js"></script>
+</head>
+
+<body>
+    <div id=everything>
+        <nav ><img id=transparentimage src="imgs/transparent_image.png" width=100% height=100%/>
+                <div id="menu">
+                    <a class = "inicio" href="index.html"><img src="imgs/Smallimage.png" title="CRATEx"/></a>
+                    <a onclick="myFunction()">Log In</a>
+                    <a class="quemsomos" href="QuemSomos.html">Quem Somos</a>
+                    <a class="orcamentos" href="Orcamentos.html">Orçamentos</a>
+                    <a class="clientes" href="index.html#text">Clientes</a>
+                    <a class="servicos" href="index.html#dropdowns">Serviços</a>
+                </div>
+            <nav class=redline></nav>
+        </nav>
+        <h1 id=formtext>Formulário</h1>
+        <div id=formulario>
+            <form id=form onsubmit="concluido()">
+            <div id=utilizador>
+                <span id=utext>Dados do utilizador</span>
+                <div id=formp>
+                    <div class="formtext">
+                        <label for="nome">Nome:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="nome" placeholder=" ex: Brian Smith" required>
+                    </div>
+                    <br>
+                    <div class="formtext">
+                        <label for="idade">Idade:</label>
+                    </div>
+                    <div>
+                        <input min="16" max="130" type="number" id="idade" placeholder=" idade" required>
+                    </div>
+
+                    <br>
+
+                    <div class="formtext">
+                        <label for="sexo">Sexo:</label>
+                    </div>
+                    <select>
+                          <option value="Masculino">Masculino</option>
+                          <option value="Feminino">Feminino</option>
+                          <option value="Outro">Outro</option>
+                    </select>
+
+                    <br><br>
+
+                    <div class="formtext">
+                        <label for="email">Email:</label>
+                    </div>
+                    <div>
+                        <input type="email" id="email" placeholder=" ex: nome@example.com" required>
+                    </div>
+
+                    <br>
+                    
+                    <div class="formtext">
+                        <label for="ident">Número de Identificação:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="ident" placeholder=" ex: 12345678-0AB1" required>
+                    </div>
+                    
+                    <br>
+                    
+                    <div class="formtext">
+                        <label for="morada">Morada:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="morada" placeholder=" rua, número, código postal, cidade, distrito, país" required>
+                    </div>
+                </div>
+            </div>
+                <br>
+                <div id=utilizador>
+                 <span id=utext>Acerca do Evento</span>  
+                    <div class="formp">
+                        <br>
+                        <div class="formtext">
+                            <label for="Orcamento">Orçamento:</label>
+                        </div>
+                        <div>
+                            <input type="number" id="nome" placeholder="quantidade(€)" min="0" max="50000" required>
+                        </div>
+                        <br>
+                        <div class="formtext">
+                            <label for="local">Localização: (Portugal)</label>
+                        </div>
+                        <div>
+                            <input type="text" id="morada" placeholder=" rua, número, código postal, cidade, distrito" required>
+                        </div>
+                        <br>
+                        <div class="formtext">
+                            <label for="data">Data:</label>
+                        </div>
+                        <div>
+                            <input type="date" id="data" placeholder=" ex: nome@example.com" required>
+                        </div>
+                        <br>
+                        <div class="formtext">
+                            <label for="tempo">Duração:</label>
+                        </div>
+                        <div>
+                            <select id="hora" onclick="hora()">
+                                <option value="tempo1h">1h00m</option>
+                                <option value="tempo1h30m">1h30m</option>
+                                <option value="tempo2h">2h00m</option>
+                                <option value="tempo2h30m">2h30m</option>
+                                <option value="tempo3h">3h00m</option>
+                                <option value="tempo3h30m">3h30m</option>
+                                <option value="tempo4h">4h00m</option>
+                            </select>
+                            <label for="tempo">&emsp;&emsp;Outra:</label>
+                            <input type="text" id="outrah" placeholder="hora/minutos">
+                        </div>
+                        <br>
+                        <div class="formtext">
+                            <label for="pessoas">Número de Pessoas:</label>
+                        </div>
+                        <div>
+                            <input type="number" id="pessoas" placeholder="número" min="20" max="10000" required>
+                        </div>
+                        <br>
+                        <div class="formtext">
+                            <label for="tipo">Tipo de Evento:</label>
+                        </div>
+                        <div>
+                            <select id="tipo" onclick="hora()">
+                                <option value="ent">Entretenimento</option>
+                                <option value="tec">Tecnológico</option>
+                                <option value="emp">Empresarial</option>
+                            </select>
+                        </div>
+                        
+                        <br>
+                        <div class="formtext">
+                            <label for="desc">Descrição do Evento:</label>
+                        </div>
+                        <textarea requeired id="desc" name="comment" form="form" placeholder="Descreva como é que quer que o seu evento seja e de que forma motivará as pessoas, na sua descrição deve colocar toda a informação que seja pertinente."></textarea><br>
+                        
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <input type="submit" id="formbutton" value="Submeter Formulário">
+                    <input type="reset" id="formbutton" value="Limpar Formulário">
+                </div>
+        </form>
+        </div>
+    </div>
+    <div id="login" display="none" hidden>
+            <nav class = titulo>Log in do CRATEx <img onclick="myFunction()" id="cross" src="imgs/cross.png" height=10/></nav>
+            <br><br>
+        <form>
+            <div>
+                <div class="formtext">
+                    <label for="email">Email:</label>
+                </div>
+                <div>
+                    <input type="email" id="email" placeholder=" ex: nome@example.com" required>
+                </div>
+                
+                <br>
+                    
+                <div class="formtext">
+                    <label for="password">Password:</label>
+                </div>
+                <div>
+                    <input type="password" id="password" placeholder=" password" required>
+                </div>
+                
+                <br>
+                
+                <div>
+                    <input type="submit" id="loginbutton" value="Log In">
+                </div>
+            </div> 
+        </form>
+            <p>Não tem uma conta? Crie uma <b><a id= "aqui" target="_blank" href="signup.html">aqui</a></b></p>
+    </div>     
+            
+    <script>
+        function myFunction() {
+            var login = document.getElementById("login");
+            if (login.style.display === "block"){
+                login.style.display = "none";
+                $("#everything").css("filter", "none");
+                $("#transparentimage").css("visibility", "hidden");
+            }
+            else{
+                login.style.display = "block"; 
+                $("#everything").css("filter", "blur(5px)");
+                $("#transparentimage").css("visibility", "visible");
+            }
+          
+        }
+        function concluido() {
+                alert("Formulário Enviado!");
+            }
+    </script>
+    
+</body>
+</html>

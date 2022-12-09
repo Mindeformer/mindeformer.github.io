@@ -1,0 +1,222 @@
+body{
+    font-family: Calibri;
+    font-size: 18px;
+    overflow-x:hidden;
+    background-color: #252E2D;
+}
+
+
+nav{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #242822;
+    width: 100%;
+    height: 70px;
+    z-index: 11;
+}
+.redline{
+    position:absolute;
+    top: 65px;
+    left: 0px;
+    right: 0px;
+    background-color: #891d17;
+    width: 100%;
+    height: 5px;
+    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.6);
+    z-index: 12;
+}
+
+#menu a{
+    display: flex;
+    background-color: #242822;
+    color: white;
+    margin: 0;
+    overflow: hidden; 
+    list-style: none;
+    padding: 23px;
+    padding-left: 30px;
+    padding-right: 30px;
+    float: right;
+    
+}
+
+#menu a:hover{
+    background-color: #0a0b0a;
+    cursor: pointer;
+}
+#menu .inicio:hover{
+    background-color: #242822;    
+}
+
+#menu a[class="inicio"]{
+    margin-top: 7px;
+    padding: 0px;
+    float: left;
+}
+.quemsomos{
+    text-decoration: none;
+}
+.orcamentos{
+    text-decoration: none;
+}
+.clientes{
+    text-decoration: none;
+}
+.servicos{
+    text-decoration: none;
+}
+
+#login{
+    width: 600px;
+    height: 300px;
+    position: fixed;
+    align-self: center;
+    vertical-align: middle;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+#login .titulo{
+    font-weight: 600;
+    height: 50px;
+    color: #1a1c1c;
+    line-height: 50px;
+    background-color: white;
+    text-align: center;
+    font-size: 28px;
+}
+
+div .formtext{
+    font-weight: bold;
+    font-size: 16px;
+}
+div input{
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #495b59;
+    border-width: thin;
+    width: 270px;
+    height: 30px;
+}
+div input:focus{
+    outline: none;
+    border: 1px #891d17 solid;
+    background-color: rgba(137,29,23, 0.1);
+}
+div input:valid{
+    background-color: white;
+}
+#loginbutton{
+    width: 80px;
+    height: 50px;
+    font-weight: bold;
+    color: #f2f2f2;
+    border: inherit;
+    background-color: #242822;
+    cursor: pointer;
+}
+#loginbutton:hover{
+    border: 1px solid #A4201B;
+    box-shadow: 0px 0px 50px rgba(255, 0, 0, 0.6);
+}
+
+#aqui{
+    text-decoration: none;
+    color: #252E2D;
+}
+#aqui:hover{
+    border-bottom: 3px solid #A4201B;
+    text-shadow: 0px 0px 50px rgba(255, 0, 0, 0.6);
+    cursor: pointer;
+}
+#cross{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+#cross:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 50px rgba(255, 0, 0, 0.8);
+}
+#everything{
+    
+}
+#transparentimage{
+    position: absolute;
+    visibility: hidden;
+}
+#formtext{
+    position: relative;
+    background-color: beige;
+    width: 50%;
+    left: -12px;
+    border: 20px beige solid;
+    border-radius: 5px;
+    top: 150px;
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    font-weight: lighter;
+    word-spacing: 42px;
+    letter-spacing: 10px;
+    box-shadow:0px 0px 20px rgba(0, 0, 0, 0.6);
+    z-index: 10;
+}
+#formulario{
+    position: absolute;
+    padding: 30px;
+    top: 300px;
+    left: 25%;
+    background-color: beige;
+    width: 50%;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.8);
+    z-index: 9;
+}
+select{
+    width: 100px;
+    height: 30px;
+}
+#utilizador{
+    padding: 20px;
+    border: 2px #A4201B solid;
+}
+#utext{
+    color: #A4201B;
+    font-weight: bold;
+    font-size: 25px;
+}
+#formp{
+    padding: 20px;
+}
+#morada{
+    width: 400px;
+}
+#formbutton{
+    margin-left: 13%;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    color: #f2f2f2;
+    border: inherit;
+    background-color: #242822;
+    cursor: pointer;
+}
+#formbutton:hover{
+    border: 1px solid #A4201B;
+    box-shadow: 0px 0px 50px rgba(255, 0, 0, 0.6);    
+}
+#tipo{
+    width: 150px;
+}
+#desc{
+    width: 500px;
+    height: 250px;
+}

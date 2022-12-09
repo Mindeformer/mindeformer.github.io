@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="css/signup_css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRATEx</title>
+    <script src="css/jquery-3.2.1.js"></script>
+</head>
+
+<body onbeforeunload= "deletethis()">
+   <div id=everything >
+        <!-- Barra do menu -->
+        <nav>
+            <div id="menu">
+                <a href="index.html"><img class = "inicio" src="imgs/Smallimage.png"/></a>
+            </div>
+        </nav>
+        <nav id=redline>
+        </nav>
+
+
+        <!-- Tabela com o registo -->
+        <table style="width: 650px" align="center">
+            <tr>
+            <th id="welcome"><br><br>Bem Vindo à CRATEx.</th>
+            </tr>
+
+        <div>
+            <form onsubmit="myFunction()">
+                <div id="signup">
+                    <tr>
+                    <th id="contatext"><br><br>Cria uma conta:</th>
+                    </tr>
+                    <tr>
+                    <th class="formtext">
+                        <label for="nome"><br>Nome:</label>
+                    </th>
+                    <th>
+                        <label for="apelido"><br><span id="apelido">Apelido:</span></label>
+                    </th>
+                    </tr>
+                    <tr>    
+                    <th class="formtextapelido">
+                       <input type="text" id="primeiro" placeholder=" ex:Brian" required>
+                    </th>
+                    <th>
+                       <input type="text" id="ultimo" placeholder=" ex:Smith" required>
+                    </th>
+                    </tr>
+                    <tr>
+                    <th class="formtext">
+                        <label for="email"><br>Email:</label>
+                    </th>
+                    </tr>
+                    <tr>
+                    <th>
+                        <input type="email" id="email" placeholder=" ex: nome@example.com" required>
+                    </th>
+                    </tr>
+                    <br>
+                    <tr>   
+                    <th class="formtext">
+                        <br> <label for="password">Password:</label>
+                    </th>
+                    </tr>
+                    <tr>
+                    <th>
+                        <input type="password" id="password" placeholder=" password" minlength="8" maxlength="16" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" required>
+                    </th>
+                    </tr>
+                    <br>
+                    <tr>
+                    <th>
+                        <br><br> <input type="submit" id="loginbutton" value="Registar">
+                    </th>
+                    </tr>
+                </div> 
+            </form>
+        </div>
+        </table>
+    </div>
+    <!-- Popup signup concluido -->
+    
+    <!-- Script do registo concluído -->
+    
+    
+        <script>
+            
+            function myFunction() {
+                alert("Registo Concluido!");
+            }
+            
+        </script>
+    
+</body>
+</html>

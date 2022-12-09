@@ -1,0 +1,327 @@
+body{
+    font-family: Calibri;
+    font-size: 18px;
+    /*overflow-x:hidden;*/
+    background-color: #252E2D;
+}
+
+
+nav{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #242822;
+    width: 100%;
+    height: 70px;
+    z-index: 11;
+}
+.redline{
+    position:absolute;
+    top: 65px;
+    left: 0px;
+    right: 0px;
+    background-color: #891d17;
+    width: 100%;
+    height: 5px;
+    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.6);
+    z-index: 12;
+}
+
+#menu a{
+    display: flex;
+    background-color: #242822;
+    color: white;
+    margin: 0;
+    overflow: hidden; 
+    list-style: none;
+    padding: 23px;
+    padding-left: 30px;
+    padding-right: 30px;
+    float: right;
+    
+}
+
+#menu a:hover{
+    background-color: #0a0b0a;
+    cursor: pointer;
+}
+#menu .inicio:hover{
+    background-color: #242822;    
+}
+
+#menu a[class="inicio"]{
+    margin-top: 7px;
+    padding: 0px;
+    float: left;
+}
+.quemsomos{
+    text-decoration: none;
+}
+.orcamentos{
+    text-decoration: none;
+}
+.clientes{
+    text-decoration: none;
+}
+.servicos{
+    text-decoration: none;
+}
+
+#login{
+    width: 600px;
+    height: 300px;
+    position: fixed;
+    align-self: center;
+    vertical-align: middle;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+#login .titulo{
+    font-weight: 600;
+    height: 50px;
+    color: #1a1c1c;
+    line-height: 50px;
+    background-color: white;
+    text-align: center;
+    font-size: 28px;
+}
+
+div .formtext{
+    font-weight: bold;
+    font-size: 16px;
+}
+div input{
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #495b59;
+    border-width: thin;
+    width: 270px;
+    height: 30px;
+}
+div input:focus{
+    outline: none;
+    border: 1px #891d17 solid;
+    background-color: rgba(137,29,23, 0.1);
+}
+div input:valid{
+    background-color: white;
+}
+#loginbutton{
+    width: 80px;
+    height: 50px;
+    font-weight: bold;
+    color: #f2f2f2;
+    border: inherit;
+    background-color: #242822;
+    cursor: pointer;
+}
+#loginbutton:hover{
+    border: 1px solid #A4201B;
+    box-shadow: 0px 0px 50px rgba(255, 0, 0, 0.6);
+}
+
+#aqui{
+    text-decoration: none;
+    color: #252E2D;
+}
+#aqui:hover{
+    border-bottom: 3px solid #A4201B;
+    text-shadow: 0px 0px 50px rgba(255, 0, 0, 0.6);
+    cursor: pointer;
+}
+#cross{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+#cross:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 50px rgba(255, 0, 0, 0.8);
+}
+#everything{
+    
+}
+#transparentimage{
+    position: absolute;
+    visibility: hidden;
+}
+#insptext{
+    position: relative;
+    background-color: beige;
+    width: 100%;
+    left: -10px;
+    border: 20px beige solid;
+    top: 150px;
+    float: left;
+    color: black;
+    font-size: 50px;
+    font-weight: lighter;
+    word-spacing: 42px;
+    letter-spacing: 10px;
+    box-shadow:0px 0px 20px rgba(0, 0, 0, 0.6);
+}
+#sobre{
+    position: relative;
+    background-color: beige;
+    width: 100%;
+    left: -10px;
+    border: 20px beige solid;
+    top: 200px;
+    float: left;
+    color: black;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: justify;
+    border: 10px;
+    padding: 10px;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    word-spacing: 15px;
+    letter-spacing: 5px;
+    box-shadow:0px 0px 20px rgba(0, 0, 0, 0.6);
+}
+#cratex{
+    position: relative;
+    top: 230px;
+    z-index: 10;
+}
+iframe{
+    position: relative;
+    top: 150px;
+    width:50%;
+    height: 500px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+}
+#mapa{
+    position: absolute;
+    top: 1500px;
+    right: 10px;
+    display: inline-flex;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+    width: 46%;
+    height:430px;
+    background-color: beige;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    padding: 10px;
+    padding-top: 40px;
+}
+#ad{
+    color: #A4201B;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+ul{
+   display: table-column;
+}
+#textareaform{
+    width: 400px;
+    height: 80px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #495b59;
+    border-width: thin;
+}
+#textareaform:focus{
+    outline: none;
+    border: 1px #891d17 solid;
+}
+#butao:hover{
+    border: 1px solid #A4201B;
+    box-shadow: 0px 0px 50px rgba(255, 0, 0, 0.6);
+}
+
+.slider{
+    position: absolute;
+    top: 700px;
+    left: 0px;
+    overflow: hidden;
+    width: 1015%;
+    height: 100%;
+    z-index: 9;
+}
+.slider figure div{
+    width: 10%;
+    float: left; 
+}
+.slider figure img{
+    width:100%;
+    height: auto;
+    float: left;  
+}
+.slider figure{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    animation:30s animaçoes infinite;
+}
+@keyframes animaçoes{
+    0%{
+        left: 0%;
+    }
+    10%{
+        left: 0%;
+    }
+    12%{
+        left: -10%;
+    }
+    22%{
+        left: -10%;
+    }
+    24%{
+        left:-20%;
+    }
+    34%{
+        left: -20%;
+    }
+    36%{
+        left: -30%;
+    }
+    46%{
+        left: -30%;
+    }
+    48%{
+        left: -40%;
+    }
+    58%{
+        left: -40%;
+    }
+    60%{
+       left: -50%; 
+    }
+    70%{
+        left: -50%;
+    }
+    72%{
+       left: -60%; 
+    }
+    82%{
+        left: -60%;
+    }
+    84%{
+       left: -70%; 
+    }
+    94%{
+        left: -70%;
+    }
+
+}
+.locais{
+    position: relative;
+    left: 1150px;
+    top: 80px;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    z-index: 15;
+}
